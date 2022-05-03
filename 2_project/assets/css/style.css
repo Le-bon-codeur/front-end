@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1300px;
+    height: 700px;
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.container .content .nav-bar {
+    width: 25%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.95);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .content .nav-bar img {
+    width: 65%;
+    height: auto;
+    margin-bottom: 40px;
+    transform: translateY(-70px);
+}
+
+.container .content .nav-bar ul {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .content .nav-bar ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.container .content .nav-bar ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: rgb(226, 226, 226);
+}
+
+.container .content section {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.95);
+}
+
+.container .content section .title-bx {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content section .title-bx p{
+    color: rgb(226, 226, 226);
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.container .content section .img-bx {
+    width: auto;
+    height: 30%;
+}
+
+.container .content section .content-bx {
+    width: 100%;
+    height: 50%;
+}
+
+.container footer {
+    width: 100%;
+    height: 10%;
+    background-color: rgba(51, 51, 51, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(174,125,91);
+    font-size: .8em;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px){
+    .container {
+        width: 900px;
+        height: 600px;
+    }
+
+    .container .content .nav-bar ul li a {
+        font-size: 1.5em;
+    }
+
+    .container footer {
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container {
+        width: 100%;
+    }
+}
